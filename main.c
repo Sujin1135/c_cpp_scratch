@@ -1,6 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+int outer;
+
 int main(void) {
-	printf("HELLO WORLD\n");
+	double f;
+	scanf("%lf", &f);
+	printf("입력한 숫자는 %.2f 입니다.\n", f);
 	return 0;
 }
