@@ -9,9 +9,9 @@ int main(void) {
 	};
 	
 	int i = INT_MIN;
-	for (i = 0; i < 3; i++) {
+	for (i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
 		int j;
-		for (j = 0; j < 3; j++) {
+		for (j = 0; j < sizeof(arr[0]) / sizeof(int); j++) {
 			printf("%d ", arr[i][j]);
 		}
 		printf("\n");
