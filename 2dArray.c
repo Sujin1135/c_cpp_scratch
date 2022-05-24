@@ -16,5 +16,14 @@ int main(void) {
 		}
 		printf("\n");
 	}
+	
+	int (*p)[3] = arr[2];
+	i = INT_MIN;
+	
+	printf("start to print pointer array\n");
+	for (i = 0; i < 3; i++) {
+		printf("%d ", p[0][i]);
+	}
+	
 	return 0;
 }
