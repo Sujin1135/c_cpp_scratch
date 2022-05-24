@@ -7,5 +7,5 @@ int main(void) {
 	free(a);
 	a = malloc(sizeof(int));
 	printf("%d\n", a);
-	free(a);
+	free(a)
 }
