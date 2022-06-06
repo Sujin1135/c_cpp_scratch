@@ -12,9 +12,11 @@ int main(void) {
 
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
-			*((p + 1) + j) = i * height + j;
-			printf("%d ", *((p + 1) + j));
+			*((p + i) + j) = i * height + j;
+			printf("%d ", *((p + i) + j));
 		}
 		printf("\n");
 	}
+
+    free(p);
 }
