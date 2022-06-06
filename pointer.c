@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void printAddressesOfArr(int arr[]) {
+void printAddressesOfArr(int *arr) {
 	int size = sizeof(arr);
 	int i;
 	for (i = 0; i < size; i++) {
