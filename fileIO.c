@@ -1,13 +1,17 @@
 #include <stdio.h>
 
-FILE writeFile(char *str) {
+typedef struct {
+    char name[20];
+    int score;
+} Student;
+
+void writeFile(char *str) {
     FILE *fp = fopen("temp.txt", "w");
     fprintf(fp, "%s\n", str);
-    return *fp;
+    fclose(fp);
 }
 
 int main(void) {
-    FILE f = writeFile("Start");
-    fclose(&f);
+    writeFile("Start");
     return 0;
 }
