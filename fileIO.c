@@ -6,6 +6,10 @@ typedef struct {
     int score;
 } Student;
 
+void initStudentsFromTxt(char *filename) {
+    
+}
+
 void writeFile(char *filename, char *str) {
     FILE *fp = fopen(filename, "w");
     fprintf(fp, "%s\n", str);
