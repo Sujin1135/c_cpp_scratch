@@ -1,14 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
-typedef struct {
-    char name[20];
-    int score;
-} Student;
-
-void initStudentsFromTxt(char *filename) {
-    
-}
 
 void writeFile(char *filename, char *str) {
     FILE *fp = fopen(filename, "w");
