@@ -8,7 +8,7 @@ typedef struct {
 } Node;
 
 Node* assign() {
-    Node * node =(Node*)malloc(sizeof(Node));
+    Node * node = (Node*)malloc(sizeof(Node));
     node->next = NULL;
     return node;
 }
