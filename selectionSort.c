@@ -9,10 +9,10 @@ void showAll(int nums[], int size) {
     printf("\n");
 }
 
-void swap(int arr[], int i, int j) {
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 int main(void) {
@@ -31,7 +31,7 @@ int main(void) {
     for (int i = 0; i < size; i++) {
         for (int j = i; j < size; j++) {
             if (nums[i] > nums[j]) {
-                swap(nums, i, j);
+                swap(&nums[i], &nums[j]);
             }
         }
     }
